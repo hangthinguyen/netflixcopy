@@ -1,0 +1,28 @@
+.search-btn-icon, .notification-icon {
+    color: #fff;
+    font-size: 20px;
+}
+
+.notification-icon {
+    padding: 0 22px;
+}
+
+.profile-pic {
+    width: 32px;
+    border-radius: 6px;
+}
+
+.right-nav-bar {
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 400px) {
+    .search-btn-icon {
+        display: none;
+    }
+}
+
+.search-btn-icon:hover, .notification-icon:hover, .profile-pic:hover {
+    cursor: pointer;
+}

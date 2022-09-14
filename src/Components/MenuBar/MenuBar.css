@@ -1,0 +1,34 @@
+.menu-container {
+    display: flex;
+    align-items: center;
+}
+
+.menu-components {
+    list-style: none;
+    display: flex;
+    font-size: 9px;
+    white-space: nowrap;
+    color: #e5e5e5;
+    padding: 0;
+}
+
+.home {
+    font-size: 9px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.menu-item {
+    padding-left: 20px;
+}
+
+.menu-item:hover, .home:hover {
+    color: #b3b3b3;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 885px) {
+    .menu-container {
+        display: none;
+    }
+}

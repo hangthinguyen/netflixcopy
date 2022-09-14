@@ -1,0 +1,44 @@
+.logo-img {
+    width: 4rem;
+    margin-right: 30px;
+}
+
+.browser-menu {
+    color: #fff;
+    font-size: 0.5rem;
+    font-weight: 700;
+    margin-right: 5px;
+}
+
+.left-bar-container {
+    display: flex;
+    align-items: center;
+}
+
+.browse-drop-down-arrow{
+    color: #fff;
+    font-size: 0.8rem;
+    padding: 0 1.3%;
+}
+
+.browser-menu:hover, .browse-drop-down-arrow:hover {
+    cursor: pointer;
+}
+
+@media screen and (min-width: 950px) {
+    .logo-img {
+        width: 6rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo-img {
+        width: 3rem;
+    }
+}
+
+@media screen and (min-width: 885px) {
+    .browser-menu, .browse-drop-down-arrow {
+        display: none;
+    }
+}

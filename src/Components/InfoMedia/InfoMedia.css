@@ -1,0 +1,73 @@
+.more-icon {
+    color: black;
+    background-color: white;
+}
+
+.info-media-container {
+    width: 36%;
+    padding-left: 4%;
+}
+
+.info-media-container h3 {
+    color: #fff;
+    font-size: 1.7vw;
+}
+
+.info-media-container p {
+    color: #fff;
+    font-size: 1.3vw;
+}
+
+.sin-of-our-mother-img {
+    width: 100%;
+}
+
+.play-btn span, .more-info-btn span {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.play-icon, .more-icon {
+    font-size: 1.3rem;
+
+}
+
+.play-btn, .more-info-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 0.6rem 1.5rem;
+}
+
+.media-container {
+    display: flex;
+    gap: 10px;
+}
+
+.more-info-btn {
+    background-color: rgba(109, 109, 110, 0.7);
+}
+
+.more-icon {
+    background-color: rgba(109, 109, 110, 0.7);
+    color: white;
+}
+
+.more-info-btn span {
+    color: white;
+}
+
+.play-btn:hover, .more-info-btn:hover {
+    cursor: pointer;
+}
+
+.more-info-btn:hover {
+    background-color: rgba(109, 109, 110, 0.4);
+}
+
+.play-btn:hover {
+    background-color: rgba(255, 255, 255, 0.75);
+}
