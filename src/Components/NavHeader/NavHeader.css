@@ -4,10 +4,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    position: absolute;
-    height: 56.25vw;
-}
-
-.video-background {
-    width: 100%;
+    height: 56.26vw;
+    background-color: linear-gradient(77deg,rgba(0,0,0,.6),transparent 85%);
 }

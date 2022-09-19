@@ -1,0 +1,14 @@
+.list-items {
+    display: flex;
+}
+
+.title {
+    color: #e5e5e5;
+    font-weight: 700;
+    font-size: 1.6vw;
+    margin: 7px 0;
+}
+
+.list-container {
+    margin: 3vw 0;
+}

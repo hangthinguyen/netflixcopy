@@ -23,12 +23,12 @@
 }
 
 .play-btn span, .more-info-btn span {
-    font-size: 1rem;
+    font-size: 2vw;
     font-weight: 700;
 }
 
 .play-icon, .more-icon {
-    font-size: 1.3rem;
+    font-size: 2vw;
 
 }
 
@@ -39,7 +39,7 @@
     background-color: #fff;
     border: none;
     border-radius: 4px;
-    padding: 0.6rem 1.5rem;
+    padding: 1vw 3vw;;
 }
 
 .media-container {
