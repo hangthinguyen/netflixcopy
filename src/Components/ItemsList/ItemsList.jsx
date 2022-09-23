@@ -41,10 +41,10 @@ export function ItemsList({title, fetchURL}) {
         movies.forEach((movie) => {
             itemResults.push({
                 id: movie.id,
-                Img: `${imgConfig.base_url}${imgConfig.poster_sizes[3]}${movie.poster_path}`,
+                Img: `${imgConfig.base_url}${imgConfig.poster_sizes[1]}${movie.poster_path}`,
             })
         })
-
+        console.log(imgConfig)
         setItems(itemResults)
     }
 

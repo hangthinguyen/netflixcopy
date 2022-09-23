@@ -1,5 +1,11 @@
 .list-items {
     display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.list-items::-webkit-scrollbar {
+    display: none;
 }
 
 .title {
@@ -10,5 +16,6 @@
 }
 
 .list-container {
+    overflow-x: hidden;
     margin: 3vw 0;
 }

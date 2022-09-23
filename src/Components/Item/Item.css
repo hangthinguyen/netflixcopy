@@ -1,9 +1,7 @@
 .card-img {
-    width: 100%;
     border-radius: 2px;
 }
 
 .card {
-    width: 24.8vw;
-    padding-right: 3px;
+    padding-right: 5px;
 }
