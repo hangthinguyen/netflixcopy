@@ -1,6 +1,6 @@
 .list-of-items {
     position: relative;
-    bottom: 20vh;
+    bottom: 28vh;
 }
 
 @media (max-width: 580px) {
