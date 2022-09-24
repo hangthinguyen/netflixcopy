@@ -1,7 +1,14 @@
 .card-img {
     border-radius: 2px;
+    width: 13vw;
 }
 
 .card {
     padding-right: 5px;
+}
+
+@media (max-width: 580px) {
+    .card-img {
+        width: 26vw;
+    }
 }

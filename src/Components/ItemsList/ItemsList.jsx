@@ -44,7 +44,7 @@ export function ItemsList({title, fetchURL}) {
                 Img: `${imgConfig.base_url}${imgConfig.poster_sizes[1]}${movie.poster_path}`,
             })
         })
-        console.log(imgConfig)
+
         setItems(itemResults)
     }
 

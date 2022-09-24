@@ -1,16 +1,17 @@
 import { faCircleExclamation, faPlay } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import LogoN from '../../assets/netflix_series_logo.png'
 import './InfoMedia.css';
 
 export default function InfoMedia({movie_name, movie_overview}) {
 
     return (
         <div className='info-media-container'>
-            {/* <img
-                src="https://occ-0-3933-3934.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABQztvXkAadEs3og8_HwbGBLvIEzaEl5YPaH0PKNeYGswFS4iR3lB6Lqeb1YWhVgJNK1CCa4nyKqKsMKybUlpUayHG19DliRUcoVnCFR_8BRmcBX6hY-JTQf1jQLOdzHD1C2MpJ9WMCi0_xzKbM3JbcnCf0vfTRPe-UoqX-7Up3f-hW1essaZtA.webp?r=942"
-                alt="sin of our mother"
-                className='sin-of-our-mother-img'
-            /> */}
+            <img
+                src={LogoN}
+                alt="logo"
+                className='movie-name'
+            />
             <h3>{movie_name}</h3>
             <p>{movie_overview}</p>
             <div className='media-container'>

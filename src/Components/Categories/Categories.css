@@ -1,0 +1,10 @@
+.list-of-items {
+    position: relative;
+    bottom: 20vh;
+}
+
+@media (max-width: 580px) {
+    .list-of-items {
+        bottom: 8vh;
+    }
+}

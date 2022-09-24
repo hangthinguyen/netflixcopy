@@ -11,6 +11,7 @@ export default function NavHeader() {
     useEffect(() => {
         async function fetchData() {
             const requestData = await tmdbApi.get(requests.fetchNetflixOriginals)
+            console.log(requestData)
             setMovie(
                 requestData.data.results[
                     Math.floor(Math.random() * requestData.data.results.length - 1)
@@ -22,7 +23,7 @@ export default function NavHeader() {
         }
         fetchData();
     },[]);
-console.log(movie.backdrop_path)
+
     return (
         <div
             className='background-img'
@@ -35,6 +36,7 @@ console.log(movie.backdrop_path)
                 movie_name={movie.name}
                 movie_overview={movie.overview}
             />
+            <div className="gradient-box" />
         </div>
     )
 }

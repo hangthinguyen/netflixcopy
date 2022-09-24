@@ -9,8 +9,9 @@
 }
 
 .info-media-container h3 {
-    color: #fff;
-    font-size: 1.7vw;
+    margin: 0;
+    color: white;
+    font-size: 4vw;
 }
 
 .info-media-container p {
@@ -18,8 +19,8 @@
     font-size: 1.3vw;
 }
 
-.sin-of-our-mother-img {
-    width: 100%;
+.movie-name {
+    width: 24%;
 }
 
 .play-btn span, .more-info-btn span {
@@ -52,7 +53,7 @@
 }
 
 .more-icon {
-    background-color: rgba(109, 109, 110, 0.7);
+    background-color: rgba(109, 109, 110, 0);
     color: white;
 }
 
@@ -70,4 +71,11 @@
 
 .play-btn:hover {
     background-color: rgba(255, 255, 255, 0.75);
+}
+
+@media (max-width: 410px) {
+    .more-info-btn, .play-btn {
+        padding: 1vw 2vw;
+        gap: 5px;
+    }
 }
