@@ -1,0 +1,59 @@
+.movie-card-hover {
+    color: white;
+    margin-right: 5px;
+}
+
+.movie-poster-hover {
+    width: 285px;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 3vw;
+}
+
+.left-side-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.icons {
+    width: 30px;
+}
+
+.bottom-features-movie-card {
+    box-sizing: border-box;
+    width: 286px;
+    padding: 15px;
+    position: relative;
+    top: -118px;
+    background-color: #141414;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.movie-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.new-movie {
+    margin: 5px 0;
+}
+
+.movie-genra {
+    display: flex;
+    align-items: center;
+    font-size: 1vw;
+}
+
+.devider {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: gray;
+    margin: 5px;
+}

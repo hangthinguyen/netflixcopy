@@ -11,15 +11,11 @@ export default function NavHeader() {
     useEffect(() => {
         async function fetchData() {
             const requestData = await tmdbApi.get(requests.fetchNetflixOriginals)
-            console.log(requestData)
             setMovie(
                 requestData.data.results[
                     Math.floor(Math.random() * requestData.data.results.length - 1)
                 ]
             );
-            console.log(requestData.data.results[
-                Math.floor(Math.random() * requestData.data.results.length - 1)
-            ])
         }
         fetchData();
     },[]);
