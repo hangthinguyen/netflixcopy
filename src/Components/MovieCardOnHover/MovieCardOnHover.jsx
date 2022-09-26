@@ -6,7 +6,6 @@ import './MovieCardOnHover.css';
 export default function MovieCardOnHobver({Img}) {
     return (
         <div className='movie-card-hover'>
-            <div>
                 <img src={Img} alt="movie-poster" className='movie-poster-hover' />
                 <div className='bottom-features-movie-card'>
                     <div className='icon-container'>
@@ -43,7 +42,6 @@ export default function MovieCardOnHobver({Img}) {
                         <span>Horrow</span>
                     </div>
                 </div>
-            </div>
         </div>
     )
 }

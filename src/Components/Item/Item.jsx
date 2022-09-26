@@ -6,17 +6,15 @@ export default function Item({Img, id}) {
     const [isHover, setHover] = useState(false);
 
     const handleOnHover = useCallback(() => {
-        console.log('hello')
         setHover(true);
     }, [])
 
     const handleUnHover = useCallback(() => {
-        console.log('bye')
         setHover(false);
     }, [])
 
     return (
-        <div onMouseLeave={handleUnHover} onMouseEnter={handleOnHover}>
+        <div onMouseLeave={handleUnHover} onMouseEnter={handleOnHover} className='movie-card-hover-container'>
             { isHover
                 ?
                 <MovieCardOnHobver
@@ -35,17 +33,5 @@ export default function Item({Img, id}) {
                 </div>
             }
         </div>
-
-
-    //     <div
-    //     className='card'
-    //     onMouseEnter={handleOnHover}
-    //     onMouseLeave={handleUnHover}
-    //     style={{
-    //         visibility: !isHover ? 'visible' : 'hidden'
-    //     }}
-    // >
-    //     <img src={Img} alt="sliding-img" className='card-img' id={id}/>
-    // </div>
     )
 }

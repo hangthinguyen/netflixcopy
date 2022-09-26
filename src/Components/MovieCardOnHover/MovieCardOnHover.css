@@ -1,10 +1,16 @@
 .movie-card-hover {
+    box-sizing: border-box;
     color: white;
     margin-right: 5px;
+    position: relative;
+    padding: 0;
+    width: 100%;
+    height: 10%;
+    z-index: 10000;
 }
 
 .movie-poster-hover {
-    width: 285px;
+    width: 18vw;
 }
 
 .icon-container {
@@ -16,19 +22,20 @@
 
 .left-side-icons {
     display: flex;
+    align-items: center;
     gap: 10px;
 }
 
 .icons {
-    width: 30px;
+    width: 2vw;
 }
 
 .bottom-features-movie-card {
     box-sizing: border-box;
-    width: 286px;
+    width: 18vw;
     padding: 15px;
     position: relative;
-    top: -106px;
+    top: -90px;
     background-color: #141414;
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
@@ -37,6 +44,7 @@
 .movie-info {
     display: flex;
     align-items: center;
+    font-size: 0.8vw;
     gap: 12px;
 }
 
@@ -47,12 +55,12 @@
 .movie-genra {
     display: flex;
     align-items: center;
-    font-size: 1vw;
+    font-size: 0.8vw;
 }
 
 .devider {
-    width: 5px;
-    height: 5px;
+    width: 0.2vw;
+    height: 0.2vw;
     border-radius: 50%;
     background-color: gray;
     margin: 5px;
