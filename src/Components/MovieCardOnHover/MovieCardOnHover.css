@@ -6,7 +6,7 @@
     padding: 0;
     width: 100%;
     height: 10%;
-    z-index: 10000;
+    z-index: 1;
 }
 
 .movie-poster-hover {
@@ -35,7 +35,7 @@
     width: 18vw;
     padding: 15px;
     position: relative;
-    top: -90px;
+    top: -80px;
     background-color: #141414;
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
@@ -66,4 +66,14 @@
     border-radius: 50%;
     background-color: gray;
     margin: 5px;
+}
+
+@media (max-width: 580px) {
+    .movie-poster-hover, .bottom-features-movie-card {
+        width: 30vw;
+    }
+
+    .bottom-features-movie-card {
+        top: -70px;
+    }
 }

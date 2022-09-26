@@ -1,16 +1,26 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import LeftNavBar from '../LeftNavBar/LeftNavBar';
 import RightNavBar from '../RightNavBar/RightNavBar';
 import './NavBar.css';
 
 export default function NavBar() {
-    const [navbarBackgroundColor, setColor] = useState('');
+    const [navbarBackgroundColor, setNavBarBackgroundColor] = useState('white');
 
-    const handleBackgroundColor = (e) => {
+    const handleOnScroll = () => {
+        if (window.scrollY > 50) {
+            setNavBarBackgroundColor('black')
+        }
+        else {
+            setNavBarBackgroundColor('')
+        }
+    }
 
-    };
+    useEffect(()=> {
+        window.addEventListener('scroll', handleOnScroll);
 
-    handleBackgroundColor();
+        return () => window.removeEventListener('scroll', handleOnScroll)
+    }, [])
+
 
     return (
         <div

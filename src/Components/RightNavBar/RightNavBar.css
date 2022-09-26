@@ -32,4 +32,9 @@
     color: white;
     font-weight: 500;
     font-size: 1.2vw;
+    text-decoration: none;
+}
+
+.dvd-link:hover {
+    cursor: pointer;
 }

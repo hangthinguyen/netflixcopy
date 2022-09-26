@@ -20,14 +20,12 @@ export default function Item({Img, id}) {
                 <MovieCardOnHobver
                     Img={Img}
                     id={id}
-                    // onMouseLeave={handleUnHover}
                     style={{
                         display: isHover ? 'none' : 'block'
                     }}
                 /> :
                 <div
                     className='card'
-                    // onMouseEnter={handleOnHover}
                 >
                     <img src={Img} alt="sliding-img" className='card-img' id={id}/>
                 </div>
