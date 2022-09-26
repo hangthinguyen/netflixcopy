@@ -39,6 +39,8 @@
     background-color: #141414;
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
+    box-shadow: 2px 5px 16px 0px #000000;
+    ;
 }
 
 .movie-info {
