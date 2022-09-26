@@ -1,4 +1,5 @@
 import { useCallback, useState } from 'react';
+import MovieCardOnHobver from '../MovieCardOnHover/MovieCardOnHover';
 import './Item.css';
 
 export default function Item({Img, id}) {
@@ -9,21 +10,42 @@ export default function Item({Img, id}) {
         setHover(true);
     }, [])
 
-    // const handleUnHover = useCallback(() => {
-    //     console.log('bye')
-    //     setHover(false);
-    // }, [])
+    const handleUnHover = useCallback(() => {
+        console.log('bye')
+        setHover(false);
+    }, [])
 
     return (
-        <div
-            className='card'
-            onMouseEnter={handleOnHover}
-            // onMouseLeave={handleUnHover}
-            style={{
-                visibility: isHover ? 'hidden' : 'visible'
-            }}
-        >
-            <img src={Img} alt="sliding-img" className='card-img' id={id}/>
+        <div onMouseLeave={handleUnHover} onMouseEnter={handleOnHover}>
+            { isHover
+                ?
+                <MovieCardOnHobver
+                    Img={Img}
+                    id={id}
+                    // onMouseLeave={handleUnHover}
+                    style={{
+                        display: isHover ? 'none' : 'block'
+                    }}
+                /> :
+                <div
+                    className='card'
+                    // onMouseEnter={handleOnHover}
+                >
+                    <img src={Img} alt="sliding-img" className='card-img' id={id}/>
+                </div>
+            }
         </div>
+
+
+    //     <div
+    //     className='card'
+    //     onMouseEnter={handleOnHover}
+    //     onMouseLeave={handleUnHover}
+    //     style={{
+    //         visibility: !isHover ? 'visible' : 'hidden'
+    //     }}
+    // >
+    //     <img src={Img} alt="sliding-img" className='card-img' id={id}/>
+    // </div>
     )
 }
