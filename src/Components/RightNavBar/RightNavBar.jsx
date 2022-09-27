@@ -1,13 +1,18 @@
 import { faBell, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import SearchBox from '../SearchBox/SearchBox';
 import './RightNavBar.css';
 
-export default function RightNavBar() {
+export default function RightNavBar({isSearchBoxShown, onClick}) {
     return (
         <div
             className='right-nav-bar'
         >
-            <FontAwesomeIcon icon={faMagnifyingGlass} className='search-btn-icon'/>
+            <div className='search-box-container' onClick={onClick}>
+                { isSearchBoxShown
+                    ? <SearchBox /> :
+                    <FontAwesomeIcon icon={faMagnifyingGlass} className='search-btn-icon'/>}
+            </div>
             <a href='https://dvd.netflix.com/Plans?preselect=1u&dsrc=STRWEB_NAV' className='dvd-link'>DVD</a>
             <FontAwesomeIcon icon={faBell} className='notification-icon'/>
             <img

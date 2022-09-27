@@ -5,7 +5,7 @@ import tmdbApi from '../../api/tmdbApi';
 import requests from '../../api/requests';
 import './NavHeader.css';
 
-export default function NavHeader() {
+export default function NavHeader({isSearchBoxShown, onClick}) {
     const [movie, setMovie] = useState([]);
 
     useEffect(() => {
@@ -27,7 +27,7 @@ export default function NavHeader() {
                 backgroundImage: "url(" + `http://image.tmdb.org/t/p/w1280/${movie.backdrop_path}` + ")"
             }}
         >
-            <NavBar />
+            <NavBar isSearchBoxShown={isSearchBoxShown} onClick={onClick}/>
             <InfoMedia
                 movie_name={movie.name}
                 movie_overview={movie.overview}

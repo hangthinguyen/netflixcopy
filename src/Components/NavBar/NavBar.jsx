@@ -3,7 +3,7 @@ import LeftNavBar from '../LeftNavBar/LeftNavBar';
 import RightNavBar from '../RightNavBar/RightNavBar';
 import './NavBar.css';
 
-export default function NavBar() {
+export default function NavBar({isSearchBoxShown, onClick}) {
     const [navbarBackgroundColor, setNavBarBackgroundColor] = useState('white');
 
     const handleOnScroll = () => {
@@ -30,7 +30,7 @@ export default function NavBar() {
             }}
         >
             <LeftNavBar />
-            <RightNavBar />
+            <RightNavBar isSearchBoxShown={isSearchBoxShown} onClick={onClick}/>
         </div>
     )
 }
