@@ -4,14 +4,14 @@ import SearchBox from '../SearchBox/SearchBox';
 import './RightNavBar.css';
 
 export default function RightNavBar({isSearchBoxShown, onClick}) {
+
     return (
         <div
             className='right-nav-bar'
         >
-            <div className='search-box-container' onClick={onClick}>
-                { isSearchBoxShown
-                    ? <SearchBox /> :
-                    <FontAwesomeIcon icon={faMagnifyingGlass} className='search-btn-icon'/>}
+            <div className='search-box-container'>
+                <SearchBox onClick={onClick} open={isSearchBoxShown}/>
+                {!isSearchBoxShown ? <FontAwesomeIcon icon={faMagnifyingGlass} className='search-btn-icon' onClick={onClick}/> : null}
             </div>
             <a href='https://dvd.netflix.com/Plans?preselect=1u&dsrc=STRWEB_NAV' className='dvd-link'>DVD</a>
             <FontAwesomeIcon icon={faBell} className='notification-icon'/>

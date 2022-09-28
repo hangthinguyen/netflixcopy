@@ -3,6 +3,10 @@
     font-size: 20px;
 }
 
+.search-btn-icon {
+    position: relative;
+    bottom: 17px;
+}
 .notification-icon, .search-btn-icon, .dvd-link {
     padding: 0 10px;
 }
