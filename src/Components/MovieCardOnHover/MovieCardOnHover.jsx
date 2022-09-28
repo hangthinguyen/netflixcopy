@@ -24,9 +24,6 @@ export default function MovieCardOnHobver({Img}) {
                         <h3 className='new-movie'>
                             New
                         </h3>
-                        <div>
-                            TV - MA
-                        </div>
                         <span>10 Episodes</span>
                         <div>
                             HD

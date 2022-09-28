@@ -1,6 +1,7 @@
 .list-items {
     display: flex;
     overflow-x: scroll;
+    overflow-y: hidden;
     gap: 5px;
     padding-bottom: 80px;
     margin-bottom: -80px;

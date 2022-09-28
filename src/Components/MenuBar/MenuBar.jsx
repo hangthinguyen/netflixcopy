@@ -9,7 +9,7 @@ export default function MenuBar() {
                 <li className='menu-item'>Movies</li>
                 <li className='menu-item'>New & Popular</li>
                 <li className='menu-item'>My List</li>
-                <li className='menu-item'>Browsee by Languages</li>
+                <li className='menu-item'>Browse by Languages</li>
             </ul>
         </div>
     )
