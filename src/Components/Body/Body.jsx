@@ -8,15 +8,19 @@ export default function Body() {
 
     const handleShownOnClick = useCallback(() => {
         setSearchBoxShown(!isSearchBoxShown)
-        console.log('hello')
     }, [isSearchBoxShown])
 
-    // const handleUnShownOnClick = useCallback(() => {
-    //     setSearchBoxShown(false)
-    // })
+    const handleUnShownOnClick = useCallback(() => {
+        setSearchBoxShown(false)
+        console.log('bye')
+    }, [])
+
     return (
         <div className='body'>
-            <NavHeader isSearchBoxShown={isSearchBoxShown} onClick={handleShownOnClick}/>
+            <NavHeader
+                isSearchBoxShown={isSearchBoxShown}
+                onClick={handleShownOnClick}
+                onMouseDown={handleUnShownOnClick}/>
             <MainContent />
         </div>
     )

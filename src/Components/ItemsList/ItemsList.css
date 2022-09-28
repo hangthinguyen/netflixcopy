@@ -1,6 +1,9 @@
 .list-items {
     display: flex;
     overflow-x: scroll;
+    gap: 5px;
+    padding-bottom: 80px;
+    margin-bottom: -80px;
 }
 
 .list-items::-webkit-scrollbar {
@@ -15,7 +18,9 @@
 }
 
 .list-container {
-    overflow-x: hidden;
     padding: 1.5vw 0 1.5vw 4%;
 }
 
+.overflow-y-visible {
+    overflow-y: visible !important;
+}

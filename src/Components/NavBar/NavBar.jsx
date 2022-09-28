@@ -1,33 +1,31 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
+import classNames from 'classnames';
 import LeftNavBar from '../LeftNavBar/LeftNavBar';
 import RightNavBar from '../RightNavBar/RightNavBar';
 import './NavBar.css';
 
 export default function NavBar({isSearchBoxShown, onClick}) {
-    const [navbarBackgroundColor, setNavBarBackgroundColor] = useState('white');
+    const [scrolled, setScrolled] = useState(false);
 
-    const handleOnScroll = () => {
-        if (window.scrollY > 50) {
-            setNavBarBackgroundColor('black')
+    const handleOnScroll = useCallback(() => {
+        if (window.scrollY > 1) {
+            setScrolled(true);
         }
         else {
-            setNavBarBackgroundColor('')
+            setScrolled(false);
         }
-    }
+    }, [])
 
     useEffect(()=> {
         window.addEventListener('scroll', handleOnScroll);
 
         return () => window.removeEventListener('scroll', handleOnScroll)
-    }, [])
+    }, [handleOnScroll])
 
 
     return (
         <div
-            className='navbar'
-            style={{
-                backgroundColor: navbarBackgroundColor,
-            }}
+            className={classNames('navbar', { scrolled: scrolled})}
         >
             <LeftNavBar />
             <RightNavBar isSearchBoxShown={isSearchBoxShown} onClick={onClick}/>
