@@ -11,6 +11,7 @@ export default function SearchBox({onClick, open}) {
         >
             <FontAwesomeIcon
                 icon={faMagnifyingGlass} className='search-icon-in-search-box'
+                onClick={onClick}
             />
             <input
                 type="text"

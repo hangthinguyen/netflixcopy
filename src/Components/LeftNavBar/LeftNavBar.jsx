@@ -1,9 +1,18 @@
 import { faCaretDown } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useCallback } from 'react';
+import { useState } from 'react';
+import DropDownMenu from '../DropDownMenu/DropDownMenu';
 import MenuBar from '../MenuBar/MenuBar';
 import './LeftNavBar.css';
 
 export default function LeftNavBar() {
+    const [isDownDropMenuShown, setDropDownMenuShown] = useState(false);
+
+    const handleDropDownMenu = useCallback(() => {
+        setDropDownMenuShown(!isDownDropMenuShown)
+        console.log('hello')
+    }, [isDownDropMenuShown])
     return (
         <div className='left-bar-container'>
                 <a href="https://www.netflix.com/browse" className='logo-container'>
@@ -15,9 +24,12 @@ export default function LeftNavBar() {
                         />
                     </div>
                 </a>
-                <span className='browser-menu'>Browse</span>
-                <FontAwesomeIcon icon={faCaretDown} className='browse-drop-down-arrow'/>
+                <div onClick={handleDropDownMenu} className='browse-menu-container'>
+                    <span className='browser-menu'>Browse</span>
+                    <FontAwesomeIcon icon={faCaretDown} className='browse-drop-down-arrow'/>
+                </div>
                 <MenuBar />
+                <DropDownMenu isDownDropMenuShown={isDownDropMenuShown}/>
         </div>
     )
 }
