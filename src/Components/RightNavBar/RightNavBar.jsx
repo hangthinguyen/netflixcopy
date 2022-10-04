@@ -1,9 +1,17 @@
-import { faBell, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
+import { faBell, faCaretDown, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useCallback } from 'react';
+import { useState } from 'react';
+import ProfileMenu from '../ProfileMenu/ProfileMenu';
 import SearchBox from '../SearchBox/SearchBox';
 import './RightNavBar.css';
 
 export default function RightNavBar({isSearchBoxShown, onClick}) {
+    const [isCaretIconUp, setCaretIconUpOrDown] = useState(false);
+
+    const handleCaretIconUpDown = useCallback(() => {
+        setCaretIconUpOrDown(!isCaretIconUp)
+    }, [isCaretIconUp]);
 
     return (
         <div
@@ -20,6 +28,8 @@ export default function RightNavBar({isSearchBoxShown, onClick}) {
                 alt=""
                 className='profile-pic'
             />
+            <FontAwesomeIcon icon={faCaretDown} className='caret-down-icon'/>
+            <ProfileMenu />
         </div>
     )
 }

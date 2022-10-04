@@ -13,8 +13,8 @@
 
 .profile-pic {
     width: 32px;
-    border-radius: 6px;
-    padding-left: 10px;
+    border-radius: 4px;
+    margin: 0 10px;
 }
 
 .right-nav-bar {
@@ -41,4 +41,8 @@
 
 .dvd-link:hover {
     cursor: pointer;
+}
+
+.caret-down-icon {
+    color: white;
 }

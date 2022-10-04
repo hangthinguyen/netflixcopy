@@ -43,3 +43,9 @@
     color: white;
     font-size: 23px;
 }
+
+@media (min-width: 885px) {
+    .drop-down-menu {
+        display: none;
+    }
+}

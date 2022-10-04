@@ -1,0 +1,26 @@
+.account-name-container {
+    display: flex;
+    gap: 10px;
+    color: white;
+    align-items: center;
+    text-decoration: none;
+}
+
+.account {
+    border-radius: 4px;
+}
+
+.accounts-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.accounts-container:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.account-function-container {
+    padding: 5px;
+}

@@ -1,0 +1,42 @@
+.account-drop-down-container {
+    position: absolute;
+    top: 71px;
+    right: 41px;
+    background-color: rgb(0, 0, 0, 0.8);
+    box-sizing: border-box;
+    width: 230px;
+    font-size: 14px;
+}
+
+.accounts-info-container {
+    padding: 15px 10px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
+.accounts-selection-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+.sign-out-btn {
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.account-caret-up-icon {
+        color: #e5e5e5;
+        font-size: 20px;
+        position: absolute;
+        top: 58px;
+        right: 71px;
+}
+
+.sign-out-btn:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
