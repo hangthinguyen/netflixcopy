@@ -7,9 +7,9 @@ import profilePic2 from '../../assets/profilepic2.png';
 import profilePic3 from '../../assets/profilepic3.png';
 import './ProfileMenu.css';
 import Profile from '../Profile/Profile';
-import AccountInfo from '../AccountInfo/AccountInfo';
+import AccountInfo from '../AccountsInfo/AccountInfo';
 
-export default function ProfileMenu() {
+export default function ProfileMenu({isCaretIconUp}) {
     const [profiles] = useState([
         {
             id: 1,
@@ -53,7 +53,11 @@ export default function ProfileMenu() {
     ]);
 
     return (
-        <div>
+        <div
+            style={{
+                display: !isCaretIconUp ? 'block' : 'none'
+            }}
+        >
             <FontAwesomeIcon icon={faCaretUp} className='account-caret-up-icon'/>
 
             <div className='account-drop-down-container'>

@@ -22,12 +22,6 @@
     align-items: center;
 }
 
-@media screen and (max-width: 400px) {
-    .search-btn-icon {
-        display: none;
-    }
-}
-
 .search-btn-icon:hover, .notification-icon:hover, .profile-pic:hover {
     cursor: pointer;
 }
@@ -37,6 +31,7 @@
     font-weight: 500;
     font-size: 1.2vw;
     text-decoration: none;
+    display: none;
 }
 
 .dvd-link:hover {
@@ -45,4 +40,23 @@
 
 .caret-down-icon {
     color: white;
+    transition: transform 0.3s ease-in;
 }
+
+.caret-down-icon.rotated {
+    transform: rotate(180deg);
+}
+
+@media screen and (max-width: 400px) {
+    .search-btn-icon {
+        display: none;
+    }
+}
+
+@media (min-width: 1100px) {
+    .dvd-link {
+        display: block;
+    }
+}
+
+
