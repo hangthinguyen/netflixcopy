@@ -7,11 +7,10 @@ import MenuBar from '../MenuBar/MenuBar';
 import './LeftNavBar.css';
 
 export default function LeftNavBar() {
-    const [isDownDropMenuShown, setDropDownMenuShown] = useState(false);
+    const [isDownDropMenuShown, setDropDownMenuShown] = useState(true);
 
     const handleDropDownMenu = useCallback(() => {
         setDropDownMenuShown(!isDownDropMenuShown)
-        console.log('hello')
     }, [isDownDropMenuShown])
     return (
         <div className='left-bar-container'>
